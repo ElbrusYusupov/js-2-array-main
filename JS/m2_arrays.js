@@ -169,29 +169,96 @@
 
 /////// $$ indexOf() and includes() Methods
 
-const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
 
-console.log(clients.indexOf('Poly'));
-console.log(clients.indexOf('Mango'));
+// console.log(clients.indexOf('Poly'));
+// console.log(clients.indexOf('Mango'));
 
-console.log(clients.indexOf('Ajax'));
+// console.log(clients.indexOf('Ajax'));
 
-console.log(clients.indexOf('Kiwi'));
+// console.log(clients.indexOf('Kiwi'));
 
-console.log(clients.indexOf('Monkong')); // -1
+// console.log(clients.indexOf('Monkong')); // -1
 
+
+// // const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+
+// console.log(clients.includes('Poly')); // true
+// console.log(clients.includes('Monkong')); // false
+
+// //// $$$ Checking multiple conditions with includes()
+
+// // Выносим варианты в массив
+// const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+// const fruit = 'cherry';
+
+// if (redFruits.includes(fruit)) {
+//   console.log('It is a red fruit');
+// }
+
+//// $$$ shift() and unshift() Methods
+
+// const clients = ['Mango', 'Ajax', 'Poly'];
+
+// console.log(clients.shift());
+// console.log(clients);
+
+// clients.unshift('Kiwi')
+// console.log(clients);
+
+//// Method slice()
 
 // const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
 
-console.log(clients.includes('Poly')); // true
-console.log(clients.includes('Monkong')); // false
+// console.log(clients.slice(1, 3));
 
-//// $$$ Checking multiple conditions with includes()
+// console.log(clients.slice(2));
+// console.log(clients.slice(0));
+// console.log(clients.slice());
+// console.log(clients.slice(-2));
 
-// Выносим варианты в массив
-const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
-const fruit = 'cherry';
 
-if (redFruits.includes(fruit)) {
-  console.log('It is a red fruit');
-}
+//// splice() method
+
+// const scores = [1, 2, 3, 4, 5]
+
+// const deletedScores = scores.splice(0, 3)
+
+// console.log(scores);
+// console.log(deletedScores);
+
+// //// $$$ Inserting elements into array
+
+
+// const colors = ['red', 'green', 'blue'];
+
+// colors.splice(2, 0, 'purple', 'yellow')
+
+// console.log(colors);
+
+
+
+// colors.splice(1, 0, 'pink', 'aqua')
+// console.log(colors);
+
+//// $$ Replacing array elements
+
+// const languages = ['C', 'C++', 'Java', 'JavaScript'];
+
+// languages.splice(1, 1, 'Python');
+// console.log(languages);
+
+// languages.splice(2, 1, 'C#', 'Swift', 'Go');
+// console.log(languages);
+
+
+//// concat() method
+
+const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+const newClients = ['Monkong', 'Singu'];
+
+const allClients = oldClients.concat(newClients);
+console.log(allClients);
+console.log(oldClients);
+
+console.log(newClients);
