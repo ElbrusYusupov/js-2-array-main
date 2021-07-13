@@ -254,11 +254,117 @@
 
 //// concat() method
 
-const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
-const newClients = ['Monkong', 'Singu'];
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Monkong', 'Singu'];
 
-const allClients = oldClients.concat(newClients);
-console.log(allClients);
-console.log(oldClients);
+// const allClients = oldClients.concat(newClients);
+// console.log(allClients);
+// console.log(oldClients);
 
-console.log(newClients);
+// console.log(newClients);
+
+//// $$$ Function expression 
+
+// const add = function (a,b,c) 
+// {
+//     return a + b + c;
+
+// }
+
+// const result = add(1,2,3)
+// console.log(result);
+
+// console.log(add(5, 10, 15));
+
+// const fnA = function () {
+//     console.log('[fnA] is start to executing');
+//     fnB();
+//     console.log('Продолжила выполняться [fnA] после выхода из [fnB]');
+// }
+
+// const fnB = function () {
+//     console.log('Выполняется [fnB]');
+
+// }
+// console.log('Начал выполнение [main]');
+// fnA();
+// console.log('Продолжил выполняться [main] после выхода из [fnA]');
+
+
+// const count = function (countFrom = 0, countTo = 10, step = 1) {
+//     console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+
+
+//     for (let i = countFrom; i <= countTo; i += step) {
+//         console.log(i);
+
+//     }
+   
+// // }
+
+// // count(1, 5);
+// // count(2);
+// // count(undefined, 5, 2);
+
+
+// ////$$ Subarray arguments
+
+// const sum = function () {
+//     let total = 0;
+//     for (const argument of arguments) {
+//         total += argument;
+// }
+
+//     return total;
+// }
+// console.log(sum(1, 2, 3)); //  6
+// console.log(sum(1, 2, 3, 4)); //  10
+// console.log(sum(1, 2, 3, 4, 5)); //  15
+
+// const fn = function () {
+//   // В переменной args будет полноценный массив
+//   const args = Array.from(arguments);
+// };
+
+
+// const withdraw = function (amount, balance) {
+// //     if (amount === 0) {
+// //         console.log('Для проведения операции введите сумму больше нуля.');
+// //     } else if (amount > balance) {
+// //         console.log('Недостаточно средств на счету.');
+// //     } else {
+// //         console.log('Операция снятия средств проведена.');
+// //     }
+// // }
+
+
+
+//     if (amount === 0) {
+//         console.log('Для проведения операции введите сумму больше нуля.');
+//         return
+//     }
+//     if (amount > balance) {
+//         console.log('Недостаточно средств на счету.');
+//         return
+//     }
+//     console.log('Операция снятия средств проведена.');
+// };
+// withdraw(0, 300);
+// withdraw(500, 300);
+// withdraw(300, 500);
+    
+
+// function add(a, b, c) {
+//   return a + b + c;
+// }
+
+console.log(add(1, 2, 3)); // 6
+print('text'); // text
+
+function add(a, b, c) {
+  return a + b + c;
+}
+
+function print(str) {
+  console.log(str);
+}
