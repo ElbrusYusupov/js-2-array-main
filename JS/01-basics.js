@@ -11,6 +11,7 @@
 
 // const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
 // console.table(friends);
+// console.log(friends[4]);
 
 // friends[1] = 'qwerqrwr';
 // friends[3] = 123123;
@@ -26,14 +27,19 @@
  * - Ссылочное равенство (referential equality)
  */
 
+
 // const a = [1, 2, 3];
 // const b = a;
+
+// // console.log('a', a);
+// // console.log('b', b);
+
+// // a[0] = 500;
 
 // console.log('a', a);
 // console.log('b', b);
 
 // a[0] = 500;
-
 // console.log('a', a);
 // console.log('b', b);
 
@@ -52,11 +58,15 @@ const friends = ['Mango', 'Kiwi', 'Poly', 'Ajax'];
 // const lastIndex = friends.length - 1;
 
 for (let i = 0; i < friends.length; i += 1) {
+    // console.log(friends[i]);
     friends[i] += `-${i}`;
 }
 
-// for (let friend of friends) {
-//   console.log(friend);
-// }
+for (let friend of friends) {
+  console.log(friend);
+}
 
 console.table(friends);
+// ----------------------------------------------------------------------------------------------------------------------------------
+
+

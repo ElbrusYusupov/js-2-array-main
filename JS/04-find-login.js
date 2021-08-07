@@ -11,6 +11,8 @@
 
 const logins = ['m4ngoDoge', 'k1widab3st', 'poly1scute', 'aj4xth3m4n'];
 const loginToFind = 'aj4xth3m4n';
+
+
 // let message = `Пользователь ${loginToFind} не найден.`;
 
 // for (let i = 0; i < logins.length; i += 1) {
@@ -40,6 +42,9 @@ const loginToFind = 'aj4xth3m4n';
 // }
 
 // console.log(message);
+
+console.log(logins.includes(loginToFind));
+
 
 const message = logins.includes(loginToFind)
     ? `Пользователь ${loginToFind} найден.`
