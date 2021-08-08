@@ -53,24 +53,38 @@
 // }
 
 
-ffunction findLongestWord(string) {
-  // Change code below this line
+// ffunction findLongestWord(string) {
+//   // Change code below this line
 
 
-  let array = string.split(' ')
-  let wordLength = 0;
-  let longestWord;
+//   let array = string.split(' ')
+//   let wordLength = 0;
+//   let longestWord;
 
-  for (let i = 0; i < array.length; i += 1) {
-    wordLength = array[1].length;
+//   for (let i = 0; i < array.length; i += 1) {
+//     wordLength = array[1].length;
 
-    if (array[i].length > wordLength) {
-      longestWord = array[i];
-      return longestWord;
-    }
+//     if (array[i].length > wordLength) {
+//       longestWord = array[i];
+//       return longestWord;
+//     }
      
-  }
-  return longestWord;
+//   }
+//   return longestWord;
 
   // Change code above this line
+// }
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+  for (let i = min; i <= max; i += 1) {
+    numbers = numbers[i]
+  }
+     
+  // Change code above this line
+  return numbers;
 }
+// console.log(numbers);
+
+console.log(createArrayOfNumbers(1, 3));
