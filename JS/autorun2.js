@@ -100,3 +100,85 @@ function createArrayOfNumbers(min, max) {
   // Change code above this line
   return numbers;
 }
+
+
+// 2/23 
+function filterArray(numbers, value) {
+   // Change code below this line
+	const num = []
+  let array = 0;
+  
+  for (let i = 0; i < numbers.length; i += 1)
+    if (numbers[i] > value) {
+      array = numbers[i].length;
+      num.push(numbers[i]);
+    }
+  return num
+
+  // Change code above this line
+}
+
+
+// 2/24
+
+function checkFruit(fruit) {
+  const fruits = ["apple", "plum", "pear", "orange"];
+
+  return fruits.includes(fruit); // Change this line
+}
+
+// 2/25
+
+function getCommonElements(array1, array2) {
+  // Change code below this line
+const arrey = [];
+    for (let i = 0; i < array1.length; i += 1) {
+        if (array2.includes(array1[i])) {
+            arrey.push(array1[i]);
+        }
+    }
+    return arrey;
+
+
+ // Change code above this line
+}
+
+
+// 2/26
+
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+  //  for (let i = 0; i < order.length; i += 1) {
+  //   total += order[i];
+  // }
+
+
+  for (const element of order) {
+    
+    total += element;
+  }
+
+  // Change code above this line
+  return total;
+}
+
+2 / 27
+
+function filterArray(numbers, value) {
+  // Change code below this line
+  const filteredNumbers = [];
+
+  // for (let i = 0; i < numbers.length; i += 1) {
+  //   const number = numbers[i];
+    
+    for (const number of numbers) 
+
+    if (number > value) {
+      filteredNumbers.push(number);
+    
+  }
+
+  return filteredNumbers;
+  // Change code above this line
+}
