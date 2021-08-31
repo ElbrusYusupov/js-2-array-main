@@ -358,13 +358,26 @@
 //   return a + b + c;
 // }
 
-console.log(add(1, 2, 3)); // 6
-print('text'); // text
+// console.log(add(1, 2, 3)); // 6
+// print('text'); // text
 
-function add(a, b, c) {
-  return a + b + c;
-}
+// function add(a, b, c) {
+//   return a + b + c;
+// }
 
-function print(str) {
-  console.log(str);
+// function print(str) {
+//   console.log(str);
+// }
+
+/*
+ * Используем цикл для вывода только нечетных чисел.
+ * Для чётных i срабатывает continue, выполнение тела прекращается
+ * и управление передаётся на следующую итерацию.
+ */
+const number = 10;
+
+for (let i = 0; i < number; i += 1) {
+  if (i % 2 === 0) 
+
+  console.log('Нечетное i: ', i); // 1, 3, 5, 7, 9
 }
