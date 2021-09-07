@@ -383,5 +383,140 @@
 // }
 
 
-const clients = ['Mango', 'Poly', 'Ajax'];
-clients[0] = 
+// const clients = ['Mango', 'Poly', 'Ajax'];
+
+// for (let i = 0; i < clients.length; i += 1) {
+//     console.log('Logging clients: ', clients[i]);
+// }
+
+//  
+
+// const clients = ['Mango', 'Ajax', 'Poly'];
+
+// for (const client of clients) {
+//     console.log(client);
+// }
+
+// const string = 'javascript';
+
+// for (const character of string) {
+//     console.log(character);
+// }
+
+// const clientNameToFind = 'Poly';
+// let message;
+// for (const client of clients) {
+//     if (client === clientNameToFind) {
+//         message = 'Клиент с таким именем есть в базе данных!';
+//         break;
+//     }
+
+//     message = 'Клиента с таким именем нету в базе данных!';
+// }
+
+// console.log(message);
+
+// let message = 'Клиента с таким именем нету в базе данных!';
+
+// for (const client of clients) {
+//     if (client === clientNameToFind) {
+//         message = 'Клиент с таким именем есть в базе данных!';
+//         break
+//     }
+// }
+
+// console.log(message);
+
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] < threshold) {
+//         continue
+//     }
+//     console.log(`Число больше чем ${threshold}: ${numbers[i]}`);
+// }
+
+// const matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// let total = 0;
+// for (let i = 0; i < matrix.length; i += 1) {
+//     console.log('Подмассив матрицы matrix[i]: ', matrix[i]);
+
+
+//     for (let j = 0; j < matrix[i].length; j += 1) {
+//         console.log('Элемент подмассива матрицы matrix[i][j]: ', matrix[i][j]);
+//         total += matrix[i][j]
+//     }
+// }
+// console.log(total);
+
+
+// const message = 'Welcome to Bahamas!';
+// console.log(message.split(' '));
+
+// console.log(message.split(''));
+
+// const clients = ['Mango', 'Poly', 'Ajax'];
+
+// console.log(clients.join(' '));
+// console.log(clients.join(','));
+// console.log(clients.join('-'));
+
+
+// const clients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+
+// console.log(clients.indexOf('Poly'));
+// console.log(clients.indexOf('Monkong'));
+// console.log(clients.includes('Poly'));
+// console.log(clients.includes('Monkong'));
+
+
+// const fruit = 'apple';
+
+// if (fruit === 'apple' || fruit === 'strawberry') {
+//   console.log('It is a red fruit!');
+// }
+
+// const clients = ['Mango', 'Ajax', 'Poly'];
+
+// console.log(clients.shift()); // Mango
+// console.log(clients); // ["Ajax", "Poly"]
+
+// clients.unshift('Kiwi');
+// console.log(clients); // ["Kiwi", "Ajax", "Poly"]
+
+
+// const scores = [1, 2, 3, 4, 5]
+// const deletedScores = scores.splice(0, 3);
+// console.log(scores);
+// console.log(deletedScores);
+
+
+// const colors = ['red', 'green', 'blue'];
+
+// colors.splice(2, 0, 'purple')
+// console.log(colors);
+
+// colors.splice(1, 0, 'yellow', 'pink');
+// console.log(colors);
+
+const languages = ['C', 'C++', 'Java', 'JavaScript'];
+languages.splice(1, 1, 'Python');
+console.log(languages);
+
+languages.splice(2, 1, 'C#', 'Swift', 'Go');
+console.log(languages);
+
+const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+const newClients = ['Monkong', 'Singu'];
+
+const allClients = oldClients.concat(newClients)
+console.log(allClients);
+
+console.log(oldClients);
+
+console.log(newClients);
