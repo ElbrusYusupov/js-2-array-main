@@ -504,19 +504,48 @@
 // colors.splice(1, 0, 'yellow', 'pink');
 // console.log(colors);
 
-const languages = ['C', 'C++', 'Java', 'JavaScript'];
-languages.splice(1, 1, 'Python');
-console.log(languages);
+// const languages = ['C', 'C++', 'Java', 'JavaScript'];
+// languages.splice(1, 1, 'Python');
+// console.log(languages);
 
-languages.splice(2, 1, 'C#', 'Swift', 'Go');
-console.log(languages);
+// languages.splice(2, 1, 'C#', 'Swift', 'Go');
+// console.log(languages);
 
-const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
-const newClients = ['Monkong', 'Singu'];
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Monkong', 'Singu'];
 
-const allClients = oldClients.concat(newClients)
-console.log(allClients);
+// const allClients = oldClients.concat(newClients)
+// console.log(allClients);
 
-console.log(oldClients);
+// console.log(oldClients);
 
-console.log(newClients);
+// console.log(newClients);
+
+// const add = function (a, b, c) {
+//   return a + b + c;
+// };
+
+
+// const user = {
+//     name: 'John',
+//     age: 20,
+//     hobby: 'tennis',
+//     premium: true
+// };
+
+// user.mood = 'happy';
+// user.hobby = 'skydiving';
+// user.premium = false;
+
+// // const result = [];
+
+// for (const key of Object.keys(user)) {
+//     console.log(`${key}: ${user[key]}`);
+    
+// }
+
+
+// console.log(user);
+
+
+const sa
