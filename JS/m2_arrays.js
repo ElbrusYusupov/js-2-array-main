@@ -548,4 +548,49 @@
 // console.log(user);
 
 
-const sa
+// Функции
+
+// function multiply(x, y, z) {
+//     console.log(`Результат умножения равен ${x * y * z}`);
+// }
+
+// console.log('лог до вызова функции multiply');
+
+// console.log('Лог после вызова функции multiply');
+// multiply(2, 3, 5);
+
+
+// function count(countFrom = 0, countTo = 10, step = 1) {
+//     console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+
+//     for (let i = countFrom; i <= countTo; i += step) {
+//         console.log(i);
+//     }
+// }
+
+// count(1, 5, 2)
+// count(2, 4, 2)
+// count()
+// function multiply() {
+//     let total = 0;
+
+//     for (const argument of arguments) {
+//         total *= argument;
+//     }
+//     return total;
+// }
+// console.log(multiply(1, 2, 3));
+
+function multiply() {
+  let total = 1;
+
+  for (const argument of arguments) {
+    total *= argument;
+  }
+
+    return total;
+    
+}
+console.log(multiply(1, 2, 3))
+console.log(multiply(1, 2, 3, 4)); //  10
+console.log(multiply(1, 2, 3, 4, 5)); //  15
