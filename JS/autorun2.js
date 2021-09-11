@@ -57,7 +57,34 @@
 
 //     // Change code above this line
 // }
+
+
+// лучшее решение 2/16 
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+
+// const newArr = firstArray.concat(secondArray).slice(0, maxLength)
+// return newArr
+
+//     // Change code above this line
+//   }
+// /лучшее решение
   
+
+// 2/18 
+
+function calculateTotal(number) {
+ // Change code below this line
+let total = 0;
+for (let i = 0; i <= number; i++) {
+ total += i 
+}
+  return total
+
+  // Change code above this line
+}
+
+
 // // 2/20
 
 // function calculateTotalPrice(order) {
@@ -75,23 +102,23 @@
 //   // Change code below this line
 
 
-//   let array = string.split(' ')
-//   let wordLength = 0;
-//   let longestWord;
+  let array = string.split(' ')
+  let wordLength = 0;
+  let longestWord;
 
-//   for (let i = 0; i < array.length; i += 1) {
-//     wordLength = array[1].length;
+  for (let i = 0; i < array.length; i += 1) {
+    wordLength = array[1].length;
 
-//     if (array[i].length > wordLength) {
-//       longestWord = array[i];
-//       return longestWord;
-//     }
+    if (array[i].length > wordLength) {
+      longestWord = array[i];
+      return longestWord;
+    }
      
-//   }
-//   return longestWord;
+  }
+  return longestWord;
 
-  // Change code above this line
-// }
+  Change code above this line
+}
 
 function createArrayOfNumbers(min, max) {
   const numbers = [];
@@ -198,5 +225,61 @@ function filterArray(numbers, value) {
   }
 
   return filteredNumbers;
+  // Change code above this line
+}
+
+// 2/29
+
+function getEvenNumbers(start, end) {
+   // Change code below this line
+	let evenNumbers = [];
+  	for (let i = start; i <= end; i++) {
+      if ([i] % 2 === 0) {
+      evenNumbers.push(i)
+      }
+        
+    }
+     
+    return evenNumbers
+    // Change code above this line
+}
+  
+// 2/30
+
+const start = 6;
+const end = 27;
+let number;
+
+for (let i = start; i < end; i += 1) {
+  if (i % 5 === 0) {
+    number = i;
+    break;
+  }
+}
+
+
+// 2/31
+function findNumber(start, end, divisor) {
+  // Change code below this line
+
+  for (let i = start; i < end; i += 1) {
+    if (i % divisor === 0) {
+    return i
+    }
+  }
+  // Change code above this line
+}
+
+// 2/32 
+
+function includes(array, value) {
+  // Change code below this line
+for (let i = 0; i < array.length; i += 1) {
+    if (array[i] === value) {
+    return true
+    }
+  }
+  return false;
+
   // Change code above this line
 }

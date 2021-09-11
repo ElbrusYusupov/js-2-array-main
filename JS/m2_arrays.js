@@ -581,16 +581,31 @@
 // }
 // console.log(multiply(1, 2, 3));
 
-function multiply() {
-  let total = 1;
+// function multiply() {
+//   let total = 1;
 
-  for (const argument of arguments) {
-    total *= argument;
-  }
+//   for (const argument of arguments) {
+//     total *= argument;
+//   }
 
-    return total;
+//     return total;
     
+// }
+// console.log(multiply(1, 2, 3))
+// console.log(multiply(1, 2, 3, 4)); //  10
+// console.log(multiply(1, 2, 3, 4, 5)); //  15
+
+
+
+function includes(array, value) {
+  // Change code below this line
+for (let i = 0; i < array.length; i += 1) {
+  if (i !== value) {
+    return true
+  } else {
+    return false
+  }
+  }
+  // Change code above this line
 }
-console.log(multiply(1, 2, 3))
-console.log(multiply(1, 2, 3, 4)); //  10
-console.log(multiply(1, 2, 3, 4, 5)); //  15
+console.log(includes(["apple", "plum", "pear", "orange"], "plum"));
