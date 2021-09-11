@@ -1,4 +1,22 @@
 
+// 1/36
+
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   const normMessage = message.toLowerCase();
+//   if (normMessage.includes('spam')) {
+//     result = true;
+//   } else if (normMessage.includes('sale')) {
+//     result = true;
+//   }else {
+//     result = false;
+//   }
+//   // Change code above this line
+//   return result;
+// }
+
+
 // // 2/11
 // function calculateEngravingPrice(message, pricePerWord) {
 //    // Change code below this line
