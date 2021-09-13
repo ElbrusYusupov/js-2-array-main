@@ -438,31 +438,87 @@
 // console.log(calculateTotalPrice("Radar"));
 // console.log(calculateTotalPrice("Droid"));
 
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "Beside Still Waters",
-    author: "Robert Sheckley",
-    rating: 8.51,
-  },
-  {
-    title: "The Dream of a Ridiculous Man",
-    author: "Fyodor Dostoevsky",
-    rating: 7.75,
-  },
-];
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+// ];
 
-for (const book of books) {
-  // Объект книги
-//   console.log(book);
-  // Название
-//   console.log(book.title);
-  // Автор
-//   console.log(book.author);
-  // Рейтинг
-  console.log(book.rating);
-}
+// for (const book of books) {
+//   // Объект книги
+// //   console.log(book);
+//   // Название
+// //   console.log(book.title);
+//   // Автор
+// //   console.log(book.author);
+//   // Рейтинг
+//   console.log(book.rating);
+// }
+
+
+// // $$ $$ Синтаксис spread и rest
+
+// const temps = [17, -4, 25, 8, 11];
+// console.log(temps);
+
+// console.log(Math.max(temps));
+
+// console.log(...temps);
+// console.log(Math.max(...temps));
+
+// const copyOfTemps = [...temps]
+// console.log(copyOfTemps);
+
+// const lastWeekTemps = [14, 25, 11];
+// const currentWeekTemps = [23, 17, 18];
+// const allTemps = [...lastWeekTemps, ...currentWeekTemps];
+
+// console.log(allTemps);
+// console.log(lastWeekTemps);
+// console.log(currentWeekTemps);
+
+// const first = { propA: 5, propB: 10, propC: 50 };
+// const second = { propC: 15, };
+// const third = { propB: 20, ...first, ...second };
+// console.log(third);
+
+// const fourth = { ...first, ...second, propB: 20 }
+// console.log(fourth);
+
+// const fifth = { ...first, propB: 20, ...second };
+// // console.log(fifth);
+
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//   console.log(firstNumber); // Значение первого аргумента
+//   console.log(secondNumber); // Значение второго аргумента
+//   console.log(otherArgs); // Массив остальных аргументов
+// }
+
+// // multiply(1, 2);
+// // multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+
+//// $$$$ Деструктуризация объектов
+
+const book = {
+  title: "The Last Kingdom",
+  author: 'Bernard Cornwell',
+  genres: ['historical prose', 'adventure'],
+  public: true,
+  rating: 8.38,
+};
+
+const {title, author, genres, public, rating}
+// console.log(message);
