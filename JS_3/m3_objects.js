@@ -401,13 +401,13 @@
 //     }
 //   }
 //   return searchResult;
-  // Change code above this line
+//   Change code above this line
     
-    // как тут работает иф.так как нам нужно проверить само свойство,
-    // то достаточно написать product[propName], если вернет тру(такое свойство
-    // есть), выполнится тело условия кода, если фолс, то не выполнится.если нужно
-    // сравнивать значения свойств, то тут уже точно нужен строгий оператор
-    // сравнения ===
+//     как тут работает иф.так как нам нужно проверить само свойство,
+//     то достаточно написать product[propName], если вернет тру(такое свойство
+//     есть), выполнится тело условия кода, если фолс, то не выполнится.если нужно
+//     сравнивать значения свойств, то тут уже точно нужен строгий оператор
+//     сравнения ===
 // }
 
 
@@ -510,15 +510,137 @@
 // // multiply(1, 2, 3);
 // multiply(1, 2, 3, 4);
 
-//// $$$$ Деструктуризация объектов
+// // $$$$ Деструктуризация объектов
 
-const book = {
-  title: "The Last Kingdom",
-  author: 'Bernard Cornwell',
-  genres: ['historical prose', 'adventure'],
-  public: true,
-  rating: 8.38,
+// const book = {
+//   title: 'The Last Kingdom',
+//   author: 'Bernard Cornwell',
+//   genres: ['historical prose', 'adventure'],
+//   publ: true,
+//   rating: 8.38,
+// }
+
+
+// const { title,
+//   author,
+//   publ,
+//   rating,
+//   coverImage } = book;
+// console.log(coverImage); // undefined
+
+// const accessType = publ ? "публичном" : "закрытом";
+// const message = `Книга ${title} автора ${author} с рейтингом ${rating} находится в ${accessType} доступе.`;
+// console.log(message);
+
+// const firstBook = {
+//   title: "The Last Kingdom",
+//   coverImage:
+//     "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+// };
+
+// const {
+//   title: firstTitle,
+//   coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+// } = firstBook;
+
+// console.log(firstTitle); // The Last Kingdom
+// console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+
+// const secondBook = {
+//   title: "Сон смешного человека",
+// };
+
+// const {
+//   title: secondTitle,
+//   coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+// } = secondBook;
+
+// console.log(secondTitle); // Сон смешного человека
+// console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+
+
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+
+// const { name, tag, stats: { followers, views: userViews, likes: userLikes = 0 },
+// } = user;
+
+// console.log(name); // Jacques Gluke
+// console.log(tag); // jgluke
+// console.log(followers); // 5603
+// console.log(userViews); // 4827
+// console.log(userLikes); // 1308
+
+// function doStuffWithBook(book) {
+//   // Делаем что-то со свойствами объекта
+//   console.log(book.title);
+//   console.log(book.numberOfPages);
+//   console.log(book.downloads);
+
+//   console.log(book.rating);
+
+//   console.log(book.public);
+
+//   // И так далее
+// }
+
+// // ✅ Всё понятно
+// doStuffWithBook({
+//   title: "The Last Kingdom",
+//   numberOfPages: 736,
+//   downloads: 10283,
+//   rating: 8.38,
+//   public: true,
+// });
+
+const showProfileInfo = function ({
+    name,
+    tag,
+    location,
+    avatar,
+    stats: {
+      followers,
+      views,
+      likes
+    }
+  }) {
+  console.log(name, tag, location, avatar, followers, views, likes);
 };
 
-const {title, author, genres, public, rating}
-// console.log(message);
+const profile = {
+  name: 'Jacques Gluke',
+  tag: 'jgluke',
+  location: 'Ocho Rios, Jamaica',
+  avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/r_oy/128.jpg',
+  stats: {
+    followers: 5603,
+    views: 4827,
+    likes: 1308,
+  },
+};
+
+showProfileInfo(profile)
+
+
+
+
+
+// const fn = function (params) { };
+// console.log(fn(10, 5, true, [], {}, 6));
+
+// fn({
+//   age: 10,
+//   friends: 5,
+//   isOnline: true,
+//   hobbies: [],
+//   games: {},
+//   rating: 6
+// })

@@ -306,5 +306,147 @@ const {yesterday, today, tomorrow} = highTemperatures;
 // Change code above this line
 const meanTemperature = (yesterday + today + tomorrow) / 3;
 
+// 3/22 
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Change code below this line
+const { yesterday, today, tomorrow, icon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", } = highTemperatures;
 
 
+// Change code above this line
+const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+
+// 3/23
+
+const highTemperatures = {
+  yesterday: 28,
+  today: 26,
+  tomorrow: 33,
+};
+// Change code below this line
+const {
+  yesterday: highYesterday,
+  today: highToday,
+  tomorrow: highTomorrow,
+  icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"
+
+} = highTemperatures
+
+
+// Change code above this line
+const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+// 3/24
+
+const colors = [
+  { hex: "#f44336", rgb: "244,67,54" },
+  { hex: "#2196f3", rgb: "33,150,243" },
+  { hex: "#4caf50", rgb: "76,175,80" },
+  { hex: "#ffeb3b", rgb: "255,235,59" },
+];
+
+const hexColors = [];
+const rgbColors = [];
+// Change code below this line
+
+for (const { hex, rgb, } of colors) {
+  hexColors.push(hex);
+  rgbColors.push(rgb);
+}
+  
+
+// 3/25
+const forecast = {
+  today: {
+    low: 28,
+    high: 32,
+    icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+  },
+  tomorrow: {
+    low: 27,
+    high: 31,
+  },
+};
+// Change code below this line
+const { today: {low: lowToday, high: highToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg"},
+  tomorrow: { low: lowTomorrow, high: highTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+} = forecast
+
+// 3/26
+
+// Change code below this line
+function calculateMeanTemperature(forecast) {
+  const { 
+    today: { low: todayLow, high: todayHigh },
+  	tomorrow: { low: tomorrowLow, high: tomorrowHigh },
+	} = forecast
+  
+  // Change code above this line
+  
+  
+  
+  return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+}
+
+
+//3/30
+function makeTask(data) {
+  const completed = false;
+  const category = "General";
+  const priority = "Normal";
+  // Change code below this line
+	return { ...{completed, category, priority}, ...data }
+  // Change code above this line
+}
+
+/*Объявлена функция makeTask(data)
+Вызов makeTask({}) возвращает { category: "General", priority: "Normal", completed: false }
+Вызов makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }) возвращает { category: "Homemade", priority: "Low", text: "Take out the trash", completed: false }
+Вызов makeTask({ category: "Finance", text: "Take interest" }) возвращает { category: "Finance", priority: "Normal", text: "Take interest", completed: false }
+Вызов makeTask({ priority: "Low", text: "Choose shampoo" }) возвращает { category: "General", priority: "Low", text: "Choose shampoo", completed: false }
+Вызов makeTask({ text: "Buy bread" }) возвращает { category: "General", priority: "Normal", text: "Buy bread", completed: false }
+*/
+
+3 / 31
+// Change code below this line
+function add(...args) {
+ let total = 0;
+  for (const arg of args) {
+  total += arg
+  }
+  
+  return total;
+  // Change code above this line
+}
+
+// 3 / 32
+function addOverNum(firstNumber, ...args) {
+  let total = 0;
+
+  for (const arg of args) {
+    if (arg > firstNumber) {
+    total += arg;
+    }
+  }
+
+  return total;
+  // Change code above this line
+}
+
+// 3/33
+
+// Change code below this line
+function findMatches(firstArg, ...args) {
+  const matches = []; // Don't change this line
+	for (const arg of args) {
+    if (firstArg.includes(arg)) {
+    matches.push(arg)
+    }
+    }
+  // Change code above this line
+  return matches;
+}
