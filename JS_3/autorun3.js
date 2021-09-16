@@ -450,3 +450,99 @@ function findMatches(firstArg, ...args) {
   // Change code above this line
   return matches;
 }
+
+
+// 3/34
+
+const bookShelf = {
+  books: ['The Last Kingdom', 'The guardian of dreams'],
+  getBooks() {
+    return 'Returning all books';
+  },
+  addBook(bookName) {
+    return `Adding book ${bookName}`;
+  },
+  removeBook(bookName) {
+    const bookIndex = this.books.indexOf(bookName);
+    return `Deleting book ${bookName}`;
+  },
+  updateBook(oldName, newName) {
+    const bookSplice = this.books.splice(oldName, 1, newName);
+    return `Updating book ${oldName} to ${newName}`
+  }
+
+}
+
+// console.log(bookShelf.getBooks());
+// console.log(bookShelf.addBook("Haze"));
+// console.log(bookShelf.removeBook("Red sunset"));
+// console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+
+// 3/35
+const bookShelf = {
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
+  updateBook(oldName, newName) {
+    // Change code below this line
+	const removeName = this.books.indexOf(oldName);
+    this.books.splice(removeName, 1, newName)
+    // Change code above this line
+  },
+};
+
+// 3/36
+const atTheOldToad = {
+  // Change code below this line
+potions: []
+
+
+  // Change code above this line
+};
+
+// 3/37
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  // Change code below this line
+	getPotions() {
+    return this.potions
+    }
+  // Change code above this line
+};
+
+// 3/38
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  addPotion(potionName) {
+    // Change code below this line
+	return this.potions.push(potionName)
+
+
+    // Change code above this line
+  },
+};
+
+// 3/39
+
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  removePotion(potionName) {
+    // Change code below this line
+	const removeName = this.potions.indexOf(potionName);
+    this.potions.splice(removeName, 1)
+
+
+    // Change code above this line
+  },
+};
+
+// 3/40
+const atTheOldToad = {
+  potions: ["Speed potion", "Dragon breath", "Stone skin"],
+  updatePotionName(oldName, newName) {
+    // Change code below this line
+	const updateName = this.potions.indexOf(oldName);
+    this.potions.splice(updateName, 1, newName);
+
+    // Change code above this line
+  },
+};
+
