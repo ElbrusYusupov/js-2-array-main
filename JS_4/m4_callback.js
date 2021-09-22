@@ -48,16 +48,90 @@
 //     console.log('Клик по кнопке ' + Date.now());
 // })
 
-const onGetPositionSuccess = function (potions) {
-    console.log('Это вызов onGetPositionSuccess');
-    console.log(potions);
+// const onGetPositionSuccess = function (potions) {
+//     console.log('Это вызов onGetPositionSuccess');
+//     console.log(potions);
 
-};
-const onGetPositionError = function (error) {
-    console.log('Это вызов onGetPositionError');
-    console.log(error);
-};
-window.navigator.geolocation.getCurrentPosition(
-    onGetPositionSuccess,
-    onGetPositionError,
-);
+// };
+// const onGetPositionError = function (error) {
+//     console.log('Это вызов onGetPositionError');
+//     console.log(error);
+// };
+// window.navigator.geolocation.getCurrentPosition(
+//     onGetPositionSuccess,
+//     onGetPositionError,
+// );
+
+// const callback = function () {
+//     console.log('Через 2 сек внутри колбека в таймауте');
+// };
+
+
+
+// console.log('В коде перед таймаутом');
+
+// setTimeout(callback, 2000)
+
+// console.log('В коде после таймаута');
+
+// const onRequestSuccess = function (response) {
+//     console.log('Вызов функции onRequestSuccess после успешного ответа бекенда');
+//     console.log(response);
+// }
+
+// fetch('https://pokeapi.co/api/v2/pokemon')
+//     .then(res => res.json())
+//     .then(onRequestSuccess);
+
+
+
+//// ВАЖНО ///////////////////////////////////////////////////////////////////////////////////////
+
+// const filter = function (array, test) {
+
+//     const filteredArray = [];
+
+//     for (const el of array) {
+//         // console.log(el);
+//         const passed = test(el);
+
+//         if (passed) {
+//             filteredArray.push(el)
+//         }
+    
+//     }
+//     return filteredArray
+// }
+
+// const callback1 = function (value) {
+//     return value >= 3;
+// }
+
+// const r1 = filter([1, 2, 3, 4, 5], callback1);
+// console.log(r1);
+
+
+// const callback2 = function (value) {
+//     return value < 5;
+// }
+
+// const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], callback2)
+// console.log(r2);
+
+
+
+// const fruits = [
+//     { name: 'apples', quantity: 200, isFresh: true },
+//     { name: 'grapes', quantity: 150, isFresh: false },
+//     { name: 'bananas', quantity: 100, isFresh: true },
+// ];
+
+
+// const getFruitsWithQuantity = function (fruit) {
+//     return fruit.quantity >= 120;
+// }
+
+// const r3 = filter(fruits, getFruitsWithQuantity)
+// console.log(r3);
+
+//// /ВАЖНО ///////////////////////////////////////////////////////////////////////////////////////
