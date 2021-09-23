@@ -135,3 +135,35 @@
 // console.log(r3);
 
 //// /ВАЖНО ///////////////////////////////////////////////////////////////////////////////////////
+
+
+function registerGuest(name, callback) {
+  console.log(`Регистрируем гостя ${name}.`);
+  callback(name);
+}
+
+// Передаём инлайн функцию greet как колбэк
+registerGuest("Манго", function greet(name) {
+  console.log(`Добро пожаловать ${name}.`);
+});
+
+// // Передаём инлайн функцию notify как колбэк
+// registerGuest("Поли", function notify(name) {
+//   console.log(`Уважаемый(ая) ${name}, ваш номер будет готов через 30 минут.`);
+// });
+
+// registerGuest("Манго", greet);
+
+
+//// /Callbacks
+
+
+const fnA = function (parameter) {
+    const innerVariable = 'значение внутренней переменной функции fnA';
+
+    const innerFunction = function () {
+        console.log(innerVariable);
+    }
+}
+
+ 
