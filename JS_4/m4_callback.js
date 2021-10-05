@@ -137,15 +137,15 @@
 //// /ВАЖНО ///////////////////////////////////////////////////////////////////////////////////////
 
 
-function registerGuest(name, callback) {
-  console.log(`Регистрируем гостя ${name}.`);
-  callback(name);
-}
+// function registerGuest(name, callback) {
+//   console.log(`Регистрируем гостя ${name}.`);
+//   callback(name);
+// }
 
-// Передаём инлайн функцию greet как колбэк
-registerGuest("Манго", function greet(name) {
-  console.log(`Добро пожаловать ${name}.`);
-});
+// // Передаём инлайн функцию greet как колбэк
+// registerGuest("Манго", function greet(name) {
+//   console.log(`Добро пожаловать ${name}.`);
+// });
 
 // // Передаём инлайн функцию notify как колбэк
 // registerGuest("Поли", function notify(name) {
@@ -158,12 +158,98 @@ registerGuest("Манго", function greet(name) {
 //// /Callbacks
 
 
-const fnA = function (parameter) {
-    const innerVariable = 'значение внутренней переменной функции fnA';
+// const fnA = function (parameter) {
+//     const innerVariable = 'значение внутренней переменной функции fnA';
 
-    const innerFunction = function () {
-        console.log(innerVariable);
-    }
-}
+//     const innerFunction = function () {
+//         console.log(innerVariable);
+//     }
+// }
 
  
+
+// function greet(name) {
+//   console.log(`Добро пожаловать ${name}.`);
+// }
+
+// function registerGuest(name, callback) {
+//   console.log(`Регистрируем гостя ${name}.`);
+//   callback(name);
+// }
+// registerGuest('Mango', greet)
+
+// function processCall(recipient) {
+//   const isRecipientAvailable = Math.random() > 0.5;
+//   console.log(isRecipientAvailable);
+
+//   if (!isRecipientAvailable) {
+//     console.log(`Абонент ${recipient} недоступен, оставьте сообщение.`);
+//   } else {
+//     console.log(`Соединяем с ${recipient}, ожидайте...`);
+//   }
+// }
+
+
+// processCall('Mango')
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//   const isRecipientAvailable = Math.random() > 0.5;
+//   console.log(isRecipientAvailable);
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient);
+//     return;
+//   }
+//   onAvailable(recipient);
+// }
+
+// function takeCall(name) {
+//   console.log(`Соединяем с ${name}, ожидайте...`);
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступен, оставьте сообщение.`);
+// }
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступен, записываем голограмму.`);
+// }
+
+// processCall("Манго", takeCall, activateAnsweringMachine);
+// processCall("Поли", takeCall, leaveHoloMessage);
+
+// function repeatLog(n) {
+//   for (let i = 0; i < n; i += 1) {
+//     console.log(i);
+//   }
+// }
+
+// // repeatLog(100)
+
+// function printValue(value) {
+//   console.log(value);
+// }
+// function prettyPrint(value) {
+//   console.log('Logging value: ', value);
+// }
+
+// function repeat(n, action) {
+//   for (let i = 0; i < n; i += 1) {
+//     action(i)
+//   }
+// }
+
+// repeat(5, printValue)
+// repeat(5, prettyPrint)
+
+
+const numbers = [5, 10, 15, 20, 25];
+
+// // Классический for
+// for (let i = 0; i < numbers.length; i += 1) {
+//   console.log(`Индекс ${i}, значение ${numbers[i]}`);
+// }
+
+// Перебирающий forEach
+numbers.forEach(function (number, index) {
+  console.log(`Индекс ${index}, значение ${number}`);
+});
