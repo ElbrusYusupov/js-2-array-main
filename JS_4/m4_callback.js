@@ -242,7 +242,7 @@
 // repeat(5, prettyPrint)
 
 
-const numbers = [5, 10, 15, 20, 25];
+// const numbers = [5, 10, 15, 20, 25];
 
 // // Классический for
 // for (let i = 0; i < numbers.length; i += 1) {
@@ -250,6 +250,115 @@ const numbers = [5, 10, 15, 20, 25];
 // }
 
 // Перебирающий forEach
-numbers.forEach(function (number, index) {
+// numbers.forEach(function (number, index) {
+//   console.log(`Индекс ${index}, значение ${number}`);
+// });
+
+// function greet(name) {
+//   return `Welcome ${name}`
+// }
+
+// console.log(greet('Mango'));
+// console.log(greet);
+
+// Колбэк-функция
+
+// function greet(name) {
+//   console.log(`Welcome ${name}`);
+// }
+
+// // Функция высшего порядка
+// function registerGuest(name, callback) {
+//   console.log(`Registering guest ${name}`);
+//   callback(name)
+// }
+// registerGuest('Mango', greet)
+
+// function registerGuest(name, callback) {
+//   console.log(`Registering guest ${name}`);
+//   callback(name);
+// }
+
+// registerGuest('Mango', function greet(name) {
+//    console.log(`Welcome ${name}`);
+// })
+
+// registerGuest('Poly', function notify(name) {
+//    console.log(`Уважаемый(ая) ${name}, ваш номер будет готов через 30 минут.`);
+// // })
+// function processCall(recipient) {
+//   const isRecipientAvailable = Math.random() > 0.5;
+//   console.log(isRecipientAvailable);
+
+//   if (!isRecipientAvailable) {
+//     console.log(`Абонент ${recipient} недоступен, оставьте сообщение.`);
+//   } else {
+//     console.log(`Соединяем с ${recipient}, ожидайте...`);
+//   }
+// }
+
+// processCall('Mango')
+
+// function processCall(recipient, onAvailable, onNotAvailable) {
+//   const isRecipientAvailable = Math.random() > 0.5;
+
+//   if (!isRecipientAvailable) {
+//     onNotAvailable(recipient)
+//     return
+//   }
+//   onAvailable(recipient)
+// };
+
+// function takeCall(name) {
+//   console.log(`Соединяем с ${name}, ожидайте...`);
+// }
+
+// function activateAnsweringMachine(name) {
+//   console.log(`Абонент ${name} недоступен, оставьте сообщение.`);
+// }
+
+// function leaveHoloMessage(name) {
+//   console.log(`Абонент ${name} недоступен, записываем голограмму.`);
+// }
+
+// processCall('Mango', takeCall, activateAnsweringMachine)
+// processCall('Poly', takeCall, leaveHoloMessage)
+
+// // for (let i = 0; i < 10; i += 1) {
+// //   console.log(i);
+// // }
+
+// function repeatLog(n) {
+//   for (let i = 0; i < n; i += 1) {
+//   console.log(i);
+// }
+// }
+// repeatLog(7)
+
+
+// function printValue(value) {
+//   console.log(value);
+// }
+
+// function prettyPrint(valeu) {
+//   console.log("Logging value: ", valeu);
+// }
+
+// function repeat(n, action) {
+//   for (let i = 0; i < n; i++) {
+//     action(i);
+    
+//   }
+// }
+
+// repeat(6, prettyPrint)
+// repeat(6, printValue)
+
+
+const numbers = [5, 10, 15, 20, 25];
+
+const logMessage = (number, index) => {
   console.log(`Индекс ${index}, значение ${number}`);
-});
+};
+
+numbers.map(logMessage);
