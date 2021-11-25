@@ -98,7 +98,7 @@ for (let i = 0; i <= number; i++) {
 // }
 
 
-// ffunction findLongestWord(string) {
+function findLongestWord(string) {
 //   // Change code below this line
 
 
@@ -117,7 +117,7 @@ for (let i = 0; i <= number; i++) {
   }
   return longestWord;
 
-  Change code above this line
+  //Change code above this line
 }
 
 function createArrayOfNumbers(min, max) {
